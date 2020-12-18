@@ -7,20 +7,23 @@
  * @param  {H.Map} map      A HERE Map instance within the application
  */
 function addMarkersToMap(map) {
-    var parisMarker = new H.map.Marker({lat:48.8567, lng:2.3508});
-    map.addObject(parisMarker);
+    var mumbaiMarker = new H.map.Marker({lat:19.0760, lng:72.8777});
+    map.addObject(mumbaiMarker);
 
-    var romeMarker = new H.map.Marker({lat:41.9, lng: 12.5});
-    map.addObject(romeMarker);
+    var delhiMarker = new H.map.Marker({lat:28.7041, lng: 77.1025});
+    map.addObject(delhiMarker);
 
-    var berlinMarker = new H.map.Marker({lat:52.5166, lng:13.3833});
-    map.addObject(berlinMarker);
+    var kolkataMarker = new H.map.Marker({lat:22.5726, lng:88.3639});
+    map.addObject(kolkataMarker);
+    
+    var ahmedabadMarker = new H.map.Marker({lat:23.0225, lng: 72.5714});
+    map.addObject(ahmedabadMarker);
 
-    var madridMarker = new H.map.Marker({lat:40.4, lng: -3.6833});
-    map.addObject(madridMarker);
+    var bangloreMarker = new H.map.Marker({lat:12.9716, lng: 77.5946});
+    map.addObject(bangloreMarker);
 
-    var londonMarker = new H.map.Marker({lat:51.5008, lng:-0.1224});
-    map.addObject(londonMarker);
+    var chennaiMarker = new H.map.Marker({lat:13.0827, lng:80.2707});
+    map.addObject(chennaiMarker);
 }
 
 /**
@@ -37,7 +40,7 @@ var defaultLayers = platform.createDefaultLayers();
 //Step 2: initialize a map - this map is centered over Europe
 var map = new H.Map(document.getElementById('map'),
   defaultLayers.vector.normal.map,{
-  center: {lat:50, lng:5},
+  center: {lat:20.5937, lng:78.9629},
   zoom: 4,
   pixelRatio: window.devicePixelRatio || 1
 });
